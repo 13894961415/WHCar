@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/xiugailayout"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        style="@style/WindowTitleBackground">
+
+        <TextView
+            android:id="@+id/revise_password_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="修改密码"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="请输入6-20位字符"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <EditText
+            android:id="@+id/center_password_jiu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/anchor_shape"
+            android:hint="请输入旧密码"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/center_password_xin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/center_password_jiu"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/anchor_shape"
+            android:hint="请输入新密码"
+            android:paddingLeft="10dp"
+            android:maxLength="20"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/center_password_c"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/center_password_xin"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/anchor_shape"
+            android:hint="再次输入密码"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/revise_password_ok"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/center_password_c"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/center_layout_shape"
+            android:gravity="center"
+            android:text="确认提交"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

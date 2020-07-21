@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+
+    <ImageView
+        android:id="@+id/home_ver_grid_img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/aq"
+        android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/home_ver_grid_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_ver_grid_img"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="3dp"
+            android:text="雷克萨萨RX"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/home_ver_grid_xx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_ver_grid_title"
+        android:text="2016款 450h 四驱豪华版"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="1dp"/>
+
+    <TextView
+        android:id="@+id/home_ver_grid_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_ver_grid_xx"
+        android:text="2016年4月 "
+        android:textColor="#9d9d9d"
+        android:textSize="15sp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_ver_grid_xx"
+        android:text="|"
+        android:textColor="#9d9d9d"
+        android:textSize="15sp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/home_ver_grid_time"
+        android:layout_marginLeft="4dp"/>
+
+    <TextView
+        android:id="@+id/home_ver_grid_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_ver_grid_xx"
+        android:text="8.3万公里"
+        android:textColor="#9d9d9d"
+        android:textSize="15sp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/home_ver_grid_time"
+        android:layout_marginLeft="13dp"/>
+
+    <TextView
+        android:id="@+id/home_ver_grid_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="48.80万"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="2dp"
+        android:layout_below="@+id/home_ver_grid_time"/>
+
+    <TextView
+        android:id="@+id/home_ver_grid_primeprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新车:74.79万"
+        android:textColor="#9d9d9d"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/home_ver_grid_time"
+        android:layout_toRightOf="@+id/home_ver_grid_price"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

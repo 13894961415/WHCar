@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#da1609">
+
+        <ImageView
+            android:id="@+id/zhuan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="关于网红二手车"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+        />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/tu"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tou"
+        android:src="@drawable/aq"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/wenzi"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tu"
+        android:text="网红二手车"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wenzi"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:text="   “网红二手车”是长春长信息技术有限公司推出的专业二手车服务平台，属于浙江长和控股集团。网红二手车专注于二手车帮买带着服务，依靠集团雄厚的研发实力、专业的管理团队及丰富的服务经验，目前已在全国20个省份、200多个城市拥有线下带看服务团队，已经与1500多家实力汽车经销商达成站略合作关系，拥有丰富的车源储备，可以满足不同客服的二手车购买需求。"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/one"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+        android:text="  网红二手车坚持“客户第一，服务至上”的发展理念，用帮带看的VIP服务切入二手车产业链，并结合集团原有的汽车金融产品优势，为消费者提供在二手车购买的整个环节中相关的咨询、购买、按揭及售后等服务，推动二手车行业的消费升级。"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/two"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:text="  网红二手车，一分钱都不让你多花！我们始终保持独立第三方的身份，已撮合交易、提供优质的服务为主，保证交易透明、公正，杜绝乱收费及问题车，给您带来全新的二手车服务体验！"/>
+
+</RelativeLayout>

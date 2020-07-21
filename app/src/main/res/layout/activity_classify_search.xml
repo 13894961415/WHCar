@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/classify_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/act_classify_scratch"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/act_search"
+                android:background="@drawable/act_search_shape">
+
+                <ImageView
+                    android:id="@+id/act_search_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:background="@mipmap/search" />
+
+                <ImageView
+                    android:id="@+id/act_search_scan"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@mipmap/classify_scan"
+                    android:visibility="gone"/>
+
+
+
+                        <com.example.whcar.Home.utils.ClearEditText
+                    android:id="@+id/act_sousuo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@+id/act_search_scan"
+                    android:layout_toRightOf="@+id/act_search_iv"
+                    android:background="@null"
+                    android:hint="搜索"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/act_search"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/scratch_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="搜索"
+                    android:textSize="16sp"
+                    android:textColor="@color/red" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+<com.example.whcar.Home.utils.FlowLayout
+    android:id="@+id/search_flow_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/classify_tab"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--</android.support.design.widget.TabLayout>-->
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/classify_content_viewpage"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--</android.support.v4.view.ViewPager>-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/act_classify_search_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:visibility="gone">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+</LinearLayout>

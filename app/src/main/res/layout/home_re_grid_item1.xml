@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <ImageView
+        android:id="@+id/home_hor_re_img"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:src="@drawable/suv"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/home_hor_re_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="两箱车"
+        android:layout_below="@+id/home_hor_re_img"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:textColor="#000"
+        />
+    </RelativeLayout>
+
+</LinearLayout>

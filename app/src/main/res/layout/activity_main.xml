@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/mFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mRadioGroup">
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/mRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#fff">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawableTop="@drawable/rb_home"
+            android:checked="true"
+            android:text="首页"
+            android:textColor="@drawable/textchoosecolor"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_classify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawableTop="@drawable/rb_classify"
+            android:text="买车"
+            android:textColor="@drawable/textchoosecolor"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_mai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawableTop="@drawable/rb_mai"
+            android:text="卖车"
+            android:textColor="@drawable/textchoosecolor"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawableTop="@drawable/rb_my"
+            android:text="我的"
+            android:textColor="@drawable/textchoosecolor"
+            android:textSize="15sp"/>
+
+
+    </RadioGroup>
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/nichenglayout"
+    android:orientation="vertical"
+    android:background="@drawable/loginground"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        style="@style/WindowTitleBackground">
+        <TextView
+            android:id="@+id/nick_name_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back_white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="修改昵称"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="请输入2-10位字符,不能包好特殊符号或敏感词"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/userNickname"
+            android:layout_width="match_parent"
+            android:background="@drawable/anchor_shape"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:hint="请输入新昵称"
+            android:textSize="16sp"
+            android:maxLength="10"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/nickName_ok"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/userNickname"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/center_layout_shape"
+            android:text="确认提交"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

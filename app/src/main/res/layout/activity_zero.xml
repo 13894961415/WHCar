@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <RelativeLayout
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+       >
+        <ImageView
+            android:id="@+id/zhubo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0 首付"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+        />
+    </RelativeLayout>
+    <com.example.whcar.refresh_load.PullToRefreshLayout
+        android:id="@+id/home_pull1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tou">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0首付-购好车"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/tou"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                />
+            <View
+                android:id="@+id/vi"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#000000"
+                android:layout_below="@+id/tel"
+                />
+
+            <com.example.whcar.Home.utils.MyGridView
+                android:id="@+id/home_ver_grid1"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_below="@+id/vi"
+                android:numColumns="2">
+            </com.example.whcar.Home.utils.MyGridView>
+
+        </LinearLayout>
+
+    </ScrollView>
+    </com.example.whcar.refresh_load.PullToRefreshLayout>
+</RelativeLayout>

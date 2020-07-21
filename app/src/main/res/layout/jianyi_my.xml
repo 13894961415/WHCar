@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <RelativeLayout
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/zhuan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="我有建议"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+        />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/jian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="建议类型"
+        android:textSize="18sp"
+        android:layout_below="@+id/tou"
+        android:textColor="#000"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/app"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="APP使用建议"
+        android:layout_below="@+id/jian"
+        android:textSize="13sp"
+        android:background="@drawable/huitoumingback"
+        android:gravity="center"
+        android:textColor="@color/gray" />
+    <TextView
+        android:id="@+id/xianxia"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="线下体验建议"
+        android:layout_toRightOf="@+id/app"
+        android:layout_below="@+id/jian"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/huitoumingback"/>
+
+    <TextView
+        android:id="@+id/wenti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="问题说明"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_below="@+id/app"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp" />
+   <LinearLayout
+       android:id="@+id/shu"
+       android:layout_margin="5dp"
+       android:layout_width="match_parent"
+       android:layout_height="80dp"
+       android:layout_below="@+id/wenti"
+       android:background="#eaeaea"
+       >
+    <EditText
+        android:id="@+id/shuoming"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:hint="请详细描述您的问题或诉求，20——500字。"
+        android:textSize="13sp"
+        android:background="@null"
+        android:textColor="#cbcbcb"
+        />
+   </LinearLayout>
+
+    <TextView
+        android:id="@+id/lianxi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系方式"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_below="@+id/shu"
+        android:layout_marginTop="5dp"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#eaeaea"
+        android:layout_below="@+id/lianxi"
+        android:layout_margin="5dp"
+        >
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:hint="请输入可以联系到您的联系方式"
+            android:background="@null"
+            android:textSize="15sp"
+            android:maxLines="11"
+            android:textColor="#cbcbcb"
+
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/tijiao"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#9e9e9e"
+        android:text="提交"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/sellback"
+        android:scaleType="fitXY"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/gray_search_back"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2686411"
+            android:textColor="@color/orange"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/sell_liuyan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="辆车成功在网红二手车售出"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/num"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+           />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/yu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/orange"
+        android:layout_marginHorizontal="20dp"
+        android:text="预约卖车"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal"
+
+        >
+    <Button
+        android:id="@+id/gu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/orange"
+        android:text="在线估价"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        />
+        <Button
+            android:id="@+id/zi"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/orange"
+            android:text="在线估价"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="@drawable/sellcar"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专业评估师，为您的爱车免费估价"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:background="@drawable/balck_kuang_back"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/tel"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/tel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="免费咨询"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/tel"
+                android:layout_marginTop="2dp"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
